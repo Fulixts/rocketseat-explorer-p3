@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Staatliches&display=swap"
         rel="stylesheet">
 
 </head>
@@ -18,63 +18,47 @@
 <body>
     <div class="page">
         <header>
-            <h1>Create and share your Event.</h1>
-            <p>The first step, is fill this inscription formulary.</p>
+            <h1>Mentoring</h1>
+            <p>Fill out the form below to schedule your mentoring</p>
         </header>
         <form id="my-form">
 
             <fieldset>
                 <div class="fieldset-wrapper">
-                    <legend>Event Informations</legend>
+                    <legend>Personal Informations</legend>
 
-                    <div class="input-wrapper">
-                        <label for="event-title">Event Title <span>(minimum of 8 characters)</span></label>
-                        <input type="text" id="event-title">
+                    <div class="col-2">
+                        <div class="input-wrapper">
+                            <label for="input-name">Name</label>
+                            <input type="text" id="input-name">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="input-last-name">Lastname</span></label>
+                            <input type="text" id="input-last-name">
+                        </div>
                     </div>
 
                     <div class="input-wrapper">
-                        <label for="event-link">Event Link <span>(Start with https://)</span></label>
-                        <input type="url" id="event-link" required minlength="8">
+                        <label for="input-email">Email <span>(Type a valid e-mail)</span></label>
+                        <input type="email" id="input-email" required >
                     </div>
 
                     <div class="input-wrapper">
-                        <label for="event-whatsapp">WhatsApp <span>(Just Numbers)</span></label>
-                        <input type="text" id="event-whatsapp">
+                        <label for="input-password">Password <span>(minimum of 6 characters)</span></label>
+                        <input type="password" id="input-password" required minlength="6">
                     </div>
 
-                    <div class="input-wrapper">
-                        <label for="event-info">Extra Informations</label>
-                        <textarea id="event-info"></textarea>
-                    </div>
-
-                    <div class="input-wrapper">
-                        <label for="event-category">Category</label>
-                        <select id="event-category">
-                            <option value="live">live</option>
-                            <option value="podcast">Podcast</option>
-                            <option value="mentorship">Mentorship</option>
-                        </select>
-                    </div>
                 </div>
             </fieldset>
 
             <fieldset>
                 <div class="fieldset-wrapper">
-                    <legend>Privacy</legend>
+                    <legend>Mentor Informations</legend>
 
                     <div class="input-wrapper">
-                        <label for="event-email">Email</label>
-                        <input type="text" id="event-email">
-                    </div>
-
-                    <div class="input-wrapper">
-                        <label for="event-password">Password<span>(minimum of 8 characters)</span></label>
-                        <input type="password" id="event-password" required minlength="8">
-                    </div>
-
-                    <div class="checkbox-wrapper">
-                        <input type="checkbox" id="event-private">
-                        <label for="event-private">Private Event</label>
+                        <label for="input-mentor-name">Mentor's Name <span>(Just the first name )</span></label>
+                        <input type="text" id="input-mentor-name">
                     </div>
                 </div>
             </fieldset>
@@ -83,20 +67,39 @@
                 <div class="fieldset-wrapper">
                     <legend>Date and Hour</legend>
 
+                    <h2>First Mentoring</h2>
                     <div class="col-3">
                         <div class="input-wrapper">
-                            <label for="event-date">Date</label>
-                            <input type="date" id="event-date">
+                            <label for="event-date-f">Date</label>
+                            <input type="date" id="event-date-f">
                         </div>
 
                         <div class="input-wrapper">
-                            <label for="event-begin">From</label>
-                            <input type="time" id="event-begin">
+                            <label for="event-begin-f">From</label>
+                            <input type="time" id="event-begin-f">
                         </div>
 
                         <div class="input-wrapper">
-                            <label for="event-end">To</label>
-                            <input type="time" id="event-end">
+                            <label for="event-end-f">To</label>
+                            <input type="time" id="event-end-f">
+                        </div>
+                    </div>
+
+                    <h2>Second Mentoring</h2>
+                    <div class="col-3">
+                        <div class="input-wrapper">
+                            <label for="event-date-s">Date</label>
+                            <input type="date" id="event-date-s">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="event-begin-s">From</label>
+                            <input type="time" id="event-begin-s">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="event-end-s">To</label>
+                            <input type="time" id="event-end-s">
                         </div>
                     </div>
                 </div>
